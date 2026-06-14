@@ -1,0 +1,59 @@
+﻿<form asp-controller="Registros" asp-action="Guardar" method="post">
+    <div class="container mt-5">
+        <h1 class="mb-4">📥 Cargar Datos de Residuos</h1>
+
+        <div class="card shadow p-4">
+
+            <div class="mb-3">
+                <label class="form-label">Hotel</label>
+                <input type="text" name="Hotel" class="form-control" required />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Área</label>
+                <select name="Area" class="form-select">
+                    <option>Comedor</option>
+                    <option>Carvao</option>
+                    <option>Caporales</option>
+                    <option>Pelicanos</option>
+                    <option>Delfines</option>
+                    <option>Manglar</option>
+                    <option>Pastelería</option>
+                    <option>Bares</option>
+                    <option>Banquetes</option>
+                    <option>A.P.</option>
+                    <option>Ama de llaves</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Turno</label>
+                <select name="Turno" class="form-select">
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Composta</label>
+                <input type="number" name="Composta" class="form-control" step="0.01" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">No Compostable</label>
+                <input type="number" name="NoCompostable" class="form-control" step="0.01" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Inorgánica</label>
+                <input type="number" name="Inorganica" class="form-control" step="0.01" />
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                Guardar Registro
+            </button>
+
+        </div>
+    </div>
+</form>

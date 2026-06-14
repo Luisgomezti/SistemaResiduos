@@ -1,0 +1,306 @@
+﻿<div class="container py-5">
+
+    <h1 class="text-center fw-bold mb-5">
+        Panel General Ambiental
+    </h1>
+
+    <!-- FILTRO DE FECHAS -->
+
+    <div class="card p-4 mb-5">
+
+        <form method="get">
+
+            <div class="row">
+
+                <div class="col-md-4">
+
+                    <label class="form-label">
+                        Fecha Inicial
+                    </label>
+
+                    <input type="date"
+                           name="fechaInicio"
+                           value="@ViewBag.FechaInicio"
+                           class="form-control">
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <label class="form-label">
+                        Fecha Final
+                    </label>
+
+                    <input type="date"
+                           name="fechaFin"
+                           value="@ViewBag.FechaFin"
+                           class="form-control">
+
+                </div>
+
+                <div class="col-md-4 d-flex align-items-end">
+
+                    <button type="submit"
+                            class="btn btn-dark w-100">
+
+                        Filtrar
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <!-- TARJETAS -->
+
+    <div class="row">
+
+        <div class="row">
+
+            <div class="row">
+
+                <div class="col-md-3">
+
+                    <div class="card shadow-lg border-0 text-center p-4 mb-4">
+
+                        <div style="font-size:40px;">
+                            📋
+                        </div>
+
+                        <h5 class="text-muted">
+                            Total Registros
+                        </h5>
+
+                        <h1 class="fw-bold">
+                            @ViewBag.TotalRegistros
+                        </h1>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="card shadow-lg border-0 text-center p-4 mb-4">
+
+                        <div style="font-size:40px;">
+                            🌿
+                        </div>
+
+                        <h5 class="text-muted">
+                            Total Composta
+                        </h5>
+
+                        <h1 class="fw-bold text-success">
+                            @ViewBag.TotalComposta
+                        </h1>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="card shadow-lg border-0 text-center p-4 mb-4">
+
+                        <div style="font-size:40px;">
+                            ♻️
+                        </div>
+
+                        <h5 class="text-muted">
+                            Total No Composteable
+                        </h5>
+
+                        <h1 class="fw-bold text-success">
+                            @ViewBag.NoCompostable
+                        </h1>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="card shadow-lg border-0 text-center p-4 mb-4">
+
+                        <div style="font-size:40px;">
+                            🏭
+                        </div>
+
+                        <h5 class="text-muted">
+                            Total Inorgánica
+                        </h5>
+
+                        <h1 class="fw-bold text-dark">
+                            @ViewBag.TotalInorganica
+                        </h1>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+    <!-- GRAFICA DE BARRAS -->
+
+    <div class="card p-4 mt-4">
+
+        <h3 class="text-center mb-4">
+
+            Comparación de Residuos
+
+        </h3>
+
+        <canvas id="graficaResiduos"></canvas>
+
+    </div>
+
+    <!-- GRAFICA CIRCULAR -->
+
+    <div class="card p-4 mt-5">
+
+        <h3 class="text-center mb-4">
+
+            Distribución de Residuos
+
+        </h3>
+
+        <div style="max-width:500px; margin:auto;">
+
+            <canvas id="graficaCircular"></canvas>
+
+        </div>
+
+    </div>
+
+    <div class="text-center mt-5">
+
+        <a href="/Registros/Lista"
+           class="btn btn-dark px-4">
+
+            Ver Historial
+
+        </a>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+
+    // GRAFICA DE BARRAS
+
+    const ctx = document.getElementById('graficaResiduos');
+
+    new Chart(ctx, {
+
+        type: 'bar',
+
+        data: {
+
+            labels: [
+                'Composta',
+                'No Compostable',
+                'Inorgánica'
+            ],
+
+            datasets: [{
+
+                label: 'Cantidad Total (kg)',
+
+                data: [
+                    @ViewBag.Composta,
+                    @ViewBag.NoCompostable,
+                    @ViewBag.Inorganica
+                ],
+
+                backgroundColor: [
+                    '#198754',
+                    '#C8A96B',
+                    '#1F2937'
+                ],
+
+                borderRadius: 8
+
+            }]
+
+        },
+
+        options: {
+
+            responsive: true,
+
+            plugins: {
+
+                legend: {
+
+                    display: false
+
+                }
+
+            },
+
+            scales: {
+
+                y: {
+
+                    beginAtZero: true
+
+                }
+
+            }
+
+        }
+
+    });
+
+    // GRAFICA CIRCULAR
+
+    const ctxPie = document.getElementById('graficaCircular');
+
+    new Chart(ctxPie, {
+
+        type: 'pie',
+
+        data: {
+
+            labels: [
+                'Composta',
+                'No Compostable',
+                'Inorgánica'
+            ],
+
+            datasets: [{
+
+                data: [
+                    @ViewBag.Composta,
+                    @ViewBag.NoCompostable,
+                    @ViewBag.Inorganica
+                ],
+
+                backgroundColor: [
+                    '#198754',
+                    '#C8A96B',
+                    '#1F2937'
+                ]
+
+            }]
+
+        },
+
+        options: {
+
+            responsive: true
+
+        }
+
+    });
+
+
+</script>

@@ -1,0 +1,63 @@
+﻿@model SistemaResiduos.Models.Registro
+
+<div class="container mt-5">
+
+    <div class="card shadow p-4">
+
+        <h2 class="text-warning mb-4">
+            Editar Registro
+        </h2>
+
+        <form asp-action="Actualizar" method="post">
+
+            <input type="hidden" asp-for="Id" />
+
+            <div class="mb-3">
+                <label class="form-label">Hotel</label>
+                <input asp-for="Hotel" class="form-control" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Área</label>
+                <input asp-for="Area" class="form-control" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Turno</label>
+                <input asp-for="Turno" class="form-control" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Composta</label>
+                <input asp-for="Composta" class="form-control" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">No Compostable</label>
+                <input asp-for="NoCompostable" class="form-control" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Inorgánica</label>
+                <input asp-for="Inorganica" class="form-control" />
+            </div>
+
+            <button type="submit"
+                    class="btn btn-warning">
+
+                Actualizar Registro
+
+            </button>
+
+            <a href="/Registros/Lista"
+               class="btn btn-secondary">
+
+                Volver
+
+            </a>
+
+        </form>
+
+    </div>
+
+</div>

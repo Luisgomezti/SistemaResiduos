@@ -1,0 +1,90 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+body {
+    background-color: #F9FAFB;
+}
+
+/* NAVBAR */
+
+.navbar {
+    background-color: #1F2937 !important;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.nav-link {
+    color: white !important;
+    transition: 0.3s;
+}
+
+    .nav-link:hover {
+        color: #C8A96B !important;
+    }
+
+/* TARJETAS */
+
+.card {
+    border: none;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+    .card h2,
+    .card h3 {
+        color: #1F2937;
+    }
+
+/* BOTONES */
+
+.btn-primary {
+    background-color: #1F2937;
+    border: none;
+}
+
+    .btn-primary:hover {
+        background-color: #C8A96B;
+    }
+
+.btn-dark {
+    background-color: #1F2937;
+    border: none;
+}
+
+.btn-success {
+    background-color: #198754;
+}
+
+/* TITULOS */
+
+.display-3 {
+    color: #1F2937 !important;
+}
+
+.text-primary {
+    color: #111827 !important;
+}
