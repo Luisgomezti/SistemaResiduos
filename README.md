@@ -7,7 +7,7 @@ Este proyecto fue desarrollado como parte de mi formación en Ingeniería en Sis
 
 El sistema permite gestionar información relacionada con residuos mediante una interfaz web intuitiva y conectada a una base de datos MySQL.
 
-Tecnologías utilizadas
+### Tecnologías utilizadas
 
 * C#
 * ASP.NET Core MVC
