@@ -1,4 +1,4 @@
-♻️ Sistema de Gestión de Residuos
+## ♻️ Sistema de Gestión de Residuos
 
 Aplicación web desarrollada con **ASP.NET Core MVC** y **MySQL** para la administración, consulta y gestión de registros relacionados con residuos.
 Descripción
@@ -17,7 +17,7 @@ El sistema permite gestionar información relacionada con residuos mediante una 
 * Bootstrap
 * Visual Studio 2022
 
-Funcionalidades
+### Funcionalidades
 
 * Inicio de sesión de usuarios
 * Registro de información
@@ -27,7 +27,7 @@ Funcionalidades
 * Conexión a base de datos MySQL
 * Arquitectura MVC
 
-📷 Capturas del sistema
+### Capturas del sistema
 
 Iicio de sesión
 
@@ -41,14 +41,14 @@ Gestión de registros
 
 *(Agregar captura aquí)*
 
-Instalación
+### Instalación
 
 1. Clonar el repositorio.
 2. Abrir la solución en Visual Studio 2022.
 3. Configurar la cadena de conexión MySQL.
 4. Ejecutar la aplicación.
 
-Autor
+### Autor
 
 **Luis Gómez**
 
