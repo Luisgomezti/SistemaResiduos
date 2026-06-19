@@ -2,7 +2,7 @@
 
 Aplicación web desarrollada con ASP.NET Core MVC y MySQL para la administración, consulta y control de residuos.
 
-## 📋 Descripción
+## Descripción
 
 Este proyecto fue desarrollado como parte de mi formación en Ingeniería en Sistemas Computacionales, con el objetivo de implementar una solución web para gestionar registros de residuos de manera eficiente.
 
