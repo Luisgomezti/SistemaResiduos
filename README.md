@@ -1,4 +1,4 @@
-# ♻️ Sistema de Gestión de Residuos
+## Sistema de Gestión de Residuos
 
 Aplicación web desarrollada con ASP.NET Core MVC y MySQL para la administración, consulta y control de residuos.
 
@@ -10,7 +10,7 @@ La aplicación permite registrar información, consultar datos almacenados, gene
 
 ---
 
-## 🚀 Tecnologías utilizadas
+## Tecnologías utilizadas
 
 - C#
 - ASP.NET Core MVC
@@ -23,7 +23,7 @@ La aplicación permite registrar información, consultar datos almacenados, gene
 
 ---
 
-## ⚙️ Funcionalidades
+## Funcionalidades
 
 - Inicio de sesión de usuarios
 - Registro de residuos
@@ -36,7 +36,7 @@ La aplicación permite registrar información, consultar datos almacenados, gene
 
 ---
 
-## 📸 Capturas del sistema
+## Capturas del sistema
 
 ### Inicio de sesión
 
@@ -64,7 +64,7 @@ La aplicación permite registrar información, consultar datos almacenados, gene
 
 ---
 
-## 🎓 Autor
+## Autor
 
 **Luis Gómez**
 
@@ -75,7 +75,7 @@ Universidad Juárez Autónoma de Tabasco
 
 ---
 
-## 📌 Estado del proyecto
+## Estado del proyecto
 
 Proyecto académico funcional desarrollado para fortalecer conocimientos en:
 
