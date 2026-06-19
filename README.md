@@ -1,57 +1,87 @@
-## ♻️ Sistema de Gestión de Residuos
+# ♻️ Sistema de Gestión de Residuos
 
-Aplicación web desarrollada con **ASP.NET Core MVC** y **MySQL** para la administración, consulta y gestión de registros relacionados con residuos.
-Descripción
+Aplicación web desarrollada con ASP.NET Core MVC y MySQL para la administración, consulta y control de residuos.
 
-Este proyecto fue desarrollado como parte de mi formación en Ingeniería en Sistemas Computacionales, aplicando conceptos de desarrollo web, bases de datos y arquitectura MVC.
+## 📋 Descripción
 
-El sistema permite gestionar información relacionada con residuos mediante una interfaz web intuitiva y conectada a una base de datos MySQL.
+Este proyecto fue desarrollado como parte de mi formación en Ingeniería en Sistemas Computacionales, con el objetivo de implementar una solución web para gestionar registros de residuos de manera eficiente.
 
-### Tecnologías utilizadas
+La aplicación permite registrar información, consultar datos almacenados, generar reportes y administrar registros mediante una interfaz intuitiva y conectada a una base de datos MySQL.
 
-* C#
-* ASP.NET Core MVC
-* MySQL
-* HTML5
-* CSS3
-* Bootstrap
-* Visual Studio 2022
+---
 
-### Funcionalidades
+## 🚀 Tecnologías utilizadas
 
-* Inicio de sesión de usuarios
-* Registro de información
-* Consulta de registros
-* Edición de datos
-* Eliminación de registros
-* Conexión a base de datos MySQL
-* Arquitectura MVC
+- C#
+- ASP.NET Core MVC
+- MySQL
+- HTML5
+- CSS3
+- Bootstrap
+- Entity Framework Core
+- Visual Studio 2022
 
-### Capturas del sistema
+---
 
-Iicio de sesión
+## ⚙️ Funcionalidades
 
-*(Agregar captura aquí)*
+- Inicio de sesión de usuarios
+- Registro de residuos
+- Consulta de información almacenada
+- Edición y eliminación de registros
+- Dashboard informativo
+- Generación de reportes en Excel
+- Conexión a base de datos MySQL
+- Interfaz web responsive
 
-Panel principal
+---
 
-*(Agregar captura aquí)*
+## 📸 Capturas del sistema
 
-Gestión de registros
+### Inicio de sesión
 
-*(Agregar captura aquí)*
+![Login](Screenshots/login.png)
 
-### Instalación
+### Pantalla principal
 
-1. Clonar el repositorio.
-2. Abrir la solución en Visual Studio 2022.
-3. Configurar la cadena de conexión MySQL.
-4. Ejecutar la aplicación.
+![Inicio](Screenshots/inicio.png)
 
-### Autor
+### Registro de residuos
+
+![Carga](Screenshots/Craga.png)
+
+### Consultas
+
+![Consultas](Screenshots/Consultas.png)
+
+### Dashboard
+
+![Dashboard](Screenshots/dashboard.png)
+
+### Exportación a Excel
+
+![Excel](Screenshots/ExcelGenerado.png)
+
+---
+
+## 🎓 Autor
 
 **Luis Gómez**
 
-Estudiante de Ingeniería en Sistemas Computacionales.
+Estudiante de Ingeniería en Sistemas Computacionales  
+Universidad Juárez Autónoma de Tabasco
 
-GitHub: github.com/Luisgomezti
+📧 lagomezalmeyda@gmail.com
+
+---
+
+## 📌 Estado del proyecto
+
+Proyecto académico funcional desarrollado para fortalecer conocimientos en:
+
+- Desarrollo web con ASP.NET Core MVC
+- Bases de datos MySQL
+- Arquitectura MVC
+- Diseño de interfaces web
+- Administración de información
+- Generación de reportes
